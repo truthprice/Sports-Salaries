@@ -56,7 +56,7 @@ Run the code in the jupyter notebook. From pgAdmin4, run queries for each table 
 ## Credits
 
 [Truth Price](https://github.com/truthprice)  
-[Jeff Frazier]  
+[Jeff Frazier](https://github.com/jfraz027)  
 <https://www.quickdatabasediagrams.com/>  
 <https://stackoverflow.com/>
 
