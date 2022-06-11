@@ -51,7 +51,16 @@ From this project there were things learned during the steps of the project crea
 
 ## Usage
 
-Run the code in the jupyter notebook. From pgAdmin4, run queries for each table to ensure that data was properly loaded into the database. 
+Run the code in the jupyter notebook. From pgAdmin4, run queries for each table to ensure that data was properly loaded into the database.  
+The following images are samples of what your query results should look like:  
+
+![Football ](https://user-images.githubusercontent.com/101297324/173203872-8c921cb7-a7d4-4261-9541-81df6f75aa52.png)  
+
+
+![Basketball](https://user-images.githubusercontent.com/101297324/173203896-57ea2c3a-3122-4941-b4d7-e8b5d96c6edc.png)  
+
+![Baseball](https://user-images.githubusercontent.com/101297324/173203907-502a5c2c-f1d1-4d1f-9e1e-9ed35c2d4905.png)
+
 
 ## Credits
 
