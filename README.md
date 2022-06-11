@@ -4,6 +4,8 @@
 
 Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
+
+
 - What was your motivation?
 - Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
 - What problem does it solve?
@@ -21,6 +23,27 @@ If your README is long, add a table of contents to make it easy for users to fin
 ## Installation
 
 What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+
+
+
+* Create a `customer_db` database in pgAdmin 4, and then create the following two tables within the database:
+  * A `premise` table that contains the `id`, `premise_name`, and `county_id` columns.
+  * A `county` table that contains the `id`, `county_name`, `license_count`, and `county_id` columns.
+  * Make sure to assign a primary key, as Pandas will not be able to do so.
+* In Jupyter Notebook, perform all ETL steps.
+* **Extraction**
+  * Put each CSV into a Pandas DataFrame.
+* **Transform**
+  * Copy _only_ the columns you need into a new DataFrame.
+  * Rename the columns to match the tables created in the database.
+  * Handle any duplicates.
+    * **Hint:** Some locations have the same name, but each license number is unique.
+  * Set the index to the previously created primary key.
+* **Load**
+  * Create a connection to the database.
+  * Check for a successful connection to the database, and confirm that the tables have been created.
+  * Append DataFrames to tables. Be sure to use the index that was set earlier.
+* Confirm that the **Load** was successful by querying the database.
 
 ## Usage
 
@@ -45,23 +68,3 @@ If you followed tutorials, include links to those here as well.
 The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
 
 ---
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
